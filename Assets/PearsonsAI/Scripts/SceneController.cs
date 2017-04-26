@@ -339,7 +339,7 @@ public class SceneController : MonoBehaviour {
     }
     public void ExitClick()
     {
-
+        Application.Quit();
     }
     public void BackClick()
     {

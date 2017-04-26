@@ -49,7 +49,7 @@ public class AITakeDamage : MonoBehaviour, IDamageable
 
 
                 agent.isStopped = true;
-                agent.enabled = false;
+                agent.enabled = true;
                 agent.radius = 0;
                 AI.Engage = false;
                 AI.Wander = false;

@@ -196,9 +196,19 @@ public class AIMovement : MonoBehaviour {
         ////anim.SetFloat("Speed", 2);
         agent.speed = 8.5f;
         agent.acceleration = 12;
-        if (Vector3.Distance(transform.position, target.transform.position) < 30)
+        if (desiredClass == "DragonClass")
         {
-            Combat = true;
+            if (Vector3.Distance(transform.position, target.transform.position) < 30)
+            {
+                Combat = true;
+            }
+        }
+        if (desiredClass == "KnightClass")
+        {
+            if (Vector3.Distance(transform.position, target.transform.position) < 15)
+            {
+                Combat = true;
+            }
         }
 
     }
@@ -213,16 +223,19 @@ public class AIMovement : MonoBehaviour {
         Dodge = false;
         DodgeLeft = false;
         DodgeRight = false;
+        float dist = 0;
         if (AttackOnce)
         {
             if(desiredClass == "KnightClass")
             {
                 desiredClassAddTime = 0;
+                dist = 0;
 
             }
             else if (desiredClass == "DragonClass")
             {
                 desiredClassAddTime = 2;
+                dist = 10;
             }
 
             quickPos = target.transform.position;
@@ -232,7 +245,7 @@ public class AIMovement : MonoBehaviour {
             AttackOnce = false;
 
             isAttacking = true;
-            if (Vector3.Distance(transform.position, target.transform.position) < 5 && Vector3.Distance(transform.position, target.transform.position) > 1)
+            if (Vector3.Distance(transform.position, target.transform.position) < 5 + dist && Vector3.Distance(transform.position, target.transform.position) > 1)
             {
                 // evaluate each combo's staleness
                 // gen a random number * staleness
@@ -612,7 +625,17 @@ public class AIMovement : MonoBehaviour {
 
                 if (target != null)
                 {
-                    if (Vector3.Distance(transform.position, target.transform.position) > 30)
+                    int dist = 0;
+                    if(desiredClass == "DragonClass")
+                    {
+                        dist = 30;
+                    }
+                    else if(desiredClass == "KnightClass")
+                    {
+                        dist = 0;
+                    }
+
+                    if (Vector3.Distance(transform.position, target.transform.position) > 30 + dist)
                     {
                         anim.SetBool("IsAttacking", false);
 
@@ -767,7 +790,7 @@ public class AIMovement : MonoBehaviour {
                 CastBlockCoolDown -= DT;
                 if (TargetAIDrago.IsAlive && target != null)
                 {
-                    if (TargetAIDrago.isAttacking == false && CanAttack == false && isAttacking == false && !Dodge && AttackCooldown < 0 && TargetAIDrago.Cast == false && Cast == false)
+                    if (TargetAIDrago.IsLanded )
                     {
                         CanAttack = true;
                         AttackOnce = true;

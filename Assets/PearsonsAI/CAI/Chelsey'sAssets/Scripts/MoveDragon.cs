@@ -14,8 +14,8 @@ namespace Dragon
         public Transform Left, Right, Back;
         private GameObject BreathTrigger;
         private NavMeshPath LastagentPath;
-        private NavMeshAgent agent;
-        private Animator anim;
+        public NavMeshAgent agent;
+        public Animator anim;
 
 
 
@@ -48,6 +48,7 @@ namespace Dragon
         public bool CanCast, isCasting, Cast;
         public float CastCooldown;
         private bool cacheOnce = true;
+		private bool AttackOnce = false;
         public GameObject[] targets;
         public string DesiredClass;
         public string DesiredTarget;
@@ -84,7 +85,8 @@ namespace Dragon
             isAttacking = false;
             agent.isStopped = false;
             currentState = States.Moving;
-            AttackCooldown = 5;
+            AttackCooldown = 20;
+            IsLanded = false;
         }
 
 
@@ -117,7 +119,7 @@ namespace Dragon
             }
             playerDis = Vector3.Distance(Target.transform.position, transform.position);
 
-            if (playerDis <= 40)
+            if (playerDis <= 30)
             {
                 engaged = true;
                 Wander = false;
@@ -155,16 +157,33 @@ namespace Dragon
             Vector3 currentPosition = transform.position;
             foreach (GameObject potentialTarget in targets)
             {
-                if (potentialTarget.GetComponent<MoveDragon>().IsAlive)
+                if (DesiredClass == "DragonClass")
                 {
-                    Vector3 directionToTarget = potentialTarget.transform.position - currentPosition;
-                    float dSqrToTarget = directionToTarget.sqrMagnitude;
-                    if (dSqrToTarget < closestDistanceSqr)
+                    if (potentialTarget.GetComponent<MoveDragon>().IsAlive)
                     {
-                        closestDistanceSqr = dSqrToTarget;
-                        bestTarget = potentialTarget;
+                        Vector3 directionToTarget = potentialTarget.transform.position - currentPosition;
+                        float dSqrToTarget = directionToTarget.sqrMagnitude;
+                        if (dSqrToTarget < closestDistanceSqr)
+                        {
+                            closestDistanceSqr = dSqrToTarget;
+                            bestTarget = potentialTarget;
+                        }
                     }
                 }
+                if (DesiredClass == "KnightClass")
+                {
+                    if (potentialTarget.GetComponent<AIMovement>().IsAlive)
+                    {
+                        Vector3 directionToTarget = potentialTarget.transform.position - currentPosition;
+                        float dSqrToTarget = directionToTarget.sqrMagnitude;
+                        if (dSqrToTarget < closestDistanceSqr)
+                        {
+                            closestDistanceSqr = dSqrToTarget;
+                            bestTarget = potentialTarget;
+                        }
+                    }
+                }
+                
 
             }
             if (bestTarget == null)
@@ -201,52 +220,62 @@ namespace Dragon
 
 
         }
+		public bool IsLanded = false;
+		void doAttack()
+		{
 
-       void doAttack()
-        {
-            if(CanAttack)
-            {
-                if(isAttacking == false)
-                {
+			if (CanAttack)
+			{
+				if (isAttacking == false)
+				{
 
-                    agent.isStopped = true;
+					agent.isStopped = true;
+                    agent.speed = 0;
+                    agent.acceleration = 0;
                     isAttacking = true;
-                }
-                
-                if (flyup == false)
-                {
-                    flyHeightCombat -= dt * 2;
-                    agent.isStopped = true;
-                    if (flyHeightCombat <= 0 && isAttacking == true)
-                    {
-                        agent.isStopped = false;
-                        anim.SetBool("Attack",true);
-                        agent.destination = Target.transform.position;
-                        agent.speed = 10;
-                        agent.acceleration = 13;
-                       
-                    }
-                }
-              
-                
-                //so stop it 
-                // -= dlyheightCombat until 0
-                //once fly height == 0 then move to attack
-                //stop within a range and attack
-                //after attack time < 0 move back a distance and switch states to states.Move
-                //Set can attack and is attacking to false then switch;
-              
-            }
-            else
-            {
-               
-            }
-        }
-       void doDefend()
-        {
+				}
+				stopTime -= dt;
+				if (flyup == false)
+				{
+					flyHeightCombat -= dt * 2;
 
-        }
 
+
+                    if (flyHeightCombat <= 0 && isAttacking == true && IsLanded == false)
+					{
+
+						anim.SetBool("Attack", true);
+						IsLanded = true;
+						AttackOnce = true;
+						stopTime = 2.5f;
+					}
+					if (stopTime <= 0 && IsLanded == true && AttackOnce == true)
+					{
+                        
+                       if (Vector3.Distance(Target.transform.position, transform.position) <= 15)
+                        {
+
+                            agent.isStopped = true;
+                            agent.destination = Target.transform.position;
+                            agent.speed = 0;
+                            agent.acceleration = 0;
+                        }
+                        else// (Vector3.Distance(transform.position, Target.transform.position) > 10)
+                        {
+
+                            agent.isStopped = false;
+                            agent.destination = Target.transform.position;
+                            agent.speed = 8;
+                            agent.acceleration = 12;
+                        }
+
+                       // AttackOnce = false;
+
+					}
+				}
+			}
+		}
+	
        private bool circleLeft , CircleRight , MoveBack , moveForward, Land;
        private float PreFightTime = 10;
         private float flyHeightCombat;
@@ -255,7 +284,7 @@ namespace Dragon
         {
 
 
-            flyHeightCombat += dt;
+            flyHeightCombat += dt * 3;
 
             PreFightTime -= dt;
 
@@ -276,7 +305,7 @@ namespace Dragon
                         circleLeft = false;
                         CircleRight = true;
                     }
-                    PreFightTime = Random.Range(5.0f, 20.0f);
+                    PreFightTime = Random.Range(15.0f, 20.0f);
                 }
 
                 ///////////////////////////////////////////////////////////
@@ -297,23 +326,25 @@ namespace Dragon
 
                 //////////////////////////////////////////////////////////////
 
-                if (FightDis <= 10)
+                if (FightDis <= 15)
                 {
                     MoveBack = true;
                     if (MoveBack == true)
                     {
                         agent.destination = Back.position;
-                        agent.speed = 3;
-                        agent.acceleration = 4;
+                        agent.speed = 6;
+                        agent.acceleration = 8;
                     }
-                    else if (FightDis >= 40)
+                    else if (FightDis >= 20)
                     {
                         moveForward = true;
                         if (moveForward == true)
                         {
                             agent.destination = Target.transform.position;
-                            agent.speed = 3;
-                            agent.acceleration = 4;
+                            agent.speed = 4;
+                            agent.acceleration = 5;
+
+
                         }
                     }
 
@@ -332,15 +363,28 @@ namespace Dragon
         }
         public GameObject Head;
         private MoveDragon DragonAI;
+        private AIMovement KnightAI;
        void watch ()
         {
             if (Target != null)
             {
                 if (DesiredClass == "KnightClass")
                 {
+                    KnightAI = Target.GetComponent<AIMovement>();
+                    AttackCooldown -= dt;
+                    if (AttackCooldown <= 0 && currentState != States.Attacking && currentState != States.Casting && currentState != States.Defending)
+                    {
+                        CanAttack = true;
+                        currentState = States.Attacking;
+                    }
+                    else if (currentState != States.Attacking && currentState != States.Casting && currentState != States.Defending)
+                    {
+                        currentState = States.Moving;
+                    }
+
 
                 }
-                else if (DesiredClass == "DragonClass")
+                 if (DesiredClass == "DragonClass")
                 {
                     
                     DragonAI = Target.GetComponent<MoveDragon>();
@@ -350,9 +394,7 @@ namespace Dragon
                         CanAttack = true;
                         currentState = States.Attacking;
                     }
-
-
-                    if(currentState != States.Attacking && currentState != States.Casting && currentState != States.Defending)
+                    else if(currentState != States.Attacking && currentState != States.Casting && currentState != States.Defending)
                     {
                         currentState = States.Moving;
                     }
@@ -370,6 +412,9 @@ namespace Dragon
             ////transform.forward = (lkat);
             ////transform.LookAt(lkat + transform.position, Vector3.up);
         }
+		void doDefend()
+		{
+		}
        void CombatMovment()
         {
             stopTime -= dt;
@@ -412,6 +457,9 @@ namespace Dragon
 
             watch();
         }
+		/// 
+		/// /////////////////////
+		/// 
         void FixedUpdate()
         {
             if (IsAlive)
@@ -448,7 +496,7 @@ namespace Dragon
                     }
                 }
 
-                flyHeightCombat = Mathf.Clamp(flyHeightCombat, 0, 15);
+                flyHeightCombat = Mathf.Clamp(flyHeightCombat, 0, 5.5f);
 
                 agent.baseOffset = flyHeightCombat;
 

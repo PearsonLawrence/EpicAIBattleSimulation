@@ -11,16 +11,16 @@ public class SwordCollider : MonoBehaviour {
     private void OnTriggerEnter(Collider other)
     {
 
-       // Debug.Log("SWORD TRIGGER :: " + other.name);
-        if (AI.AllowAttackDamage  && AI.anim.GetBool("IsAttacking") == true)
+        // Debug.Log("SWORD TRIGGER :: " + other.name);
+        if (AI.AllowAttackDamage && AI.anim.GetBool("IsAttacking") == true)
         {
-            if(other.CompareTag(AI.TargetName) && other.GetComponent<AIMovement>().Dodging == false)
+            if (other.CompareTag(AI.TargetName) && other.GetComponent<AIMovement>().Dodging == false)
             {
                 RaycastHit hit;
                 if (Physics.Raycast(transform.position, transform.forward, out hit))
                 {
                     ParticleSystem SwordHit = Instantiate(Hitter, hit.point, Quaternion.FromToRotation(Vector3.up, hit.normal));
-                   
+
                     sound.Play();
                     Hitter.simulationSpace = ParticleSystemSimulationSpace.World;
 
@@ -28,7 +28,28 @@ public class SwordCollider : MonoBehaviour {
                     SwordHit.simulationSpace = ParticleSystemSimulationSpace.World;
                 }
                 other.GetComponent<AITakeDamage>().TakeDamage(10);
-                
+
+            }
+        }
+
+        if (AI.desiredClass == "DragonClass" && AI.isAttacking)
+        {
+
+            if (other.CompareTag(AI.TargetName))
+            {
+                RaycastHit hit;
+                if (Physics.Raycast(transform.position, transform.forward, out hit))
+                {
+                    ParticleSystem SwordHit = Instantiate(Hitter, hit.point, Quaternion.FromToRotation(Vector3.up, hit.normal));
+
+                    Hitter.simulationSpace = ParticleSystemSimulationSpace.World;
+
+
+                    SwordHit.simulationSpace = ParticleSystemSimulationSpace.World;
+                }
+
+
+                other.GetComponent<DragonTakeDamage>().TakeDamage(50);
             }
         }
     }

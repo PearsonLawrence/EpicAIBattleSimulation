@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class AIspawner : MonoBehaviour {
-    public GameObject classKnight, classKnight1, classDragon;
+    public GameObject classKnight, classKnight1, classDragon, classDragon1;
     public string DesiredClass;
     public bool spawn;
     public bool CanUseMagic;

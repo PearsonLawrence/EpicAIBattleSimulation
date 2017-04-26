@@ -10,3 +10,8 @@ public interface IDamageable
         void TakeDamageExplosion(float damageDealt, Vector3 center);
     
 }
+public interface IDamageableDragon
+{
+
+    void TakeDamage(float damageDealt);
+}
