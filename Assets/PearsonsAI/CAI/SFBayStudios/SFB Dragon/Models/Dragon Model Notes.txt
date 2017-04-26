@@ -1,0 +1,10 @@
+NOTES ON DRAGON MODELS
+
+April 2nd, 2017
+
+For those familiar with the Dragon, the previous "Dragon Rider" version is now just he Dragon verison.  You'll see the Male & Female bodies as you'd expect.  For everyone else, here's the dragon!
+
+UPDATING ANIMATION EVENTS
+It's a pain to set animation events, and even more to copy them to a new model.  You'll find a helpful script in Windows/SFBayStudios/Animation Event Manager
+
+Use this to quickly and easily copy events from your old Dragon model to the new.  Just be sure to read the instrucitons -- you'll need to make a copy of the old Animator Controller, and populate the animations.  You may also need to run the "Rename" Utilitiy options in the script before you can copy.

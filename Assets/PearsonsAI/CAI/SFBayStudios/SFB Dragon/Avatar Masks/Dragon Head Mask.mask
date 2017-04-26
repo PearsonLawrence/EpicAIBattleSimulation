@@ -1,0 +1,397 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1011 &101100000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Dragon Head Mask
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: Body001
+    m_Weight: 0
+  - m_Path: Bridle01
+    m_Weight: 1
+  - m_Path: Bridle_Head_B
+    m_Weight: 1
+  - m_Path: Bridle_Head_C
+    m_Weight: 1
+  - m_Path: Carapace
+    m_Weight: 0
+  - m_Path: Carapace_Saddled
+    m_Weight: 0
+  - m_Path: DragonRoot
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonLLeg1
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonLLeg1/English DragonLLeg2
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonLLeg1/English DragonLLeg2/English
+      DragonLLeg3
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonLLeg1/English DragonLLeg2/English
+      DragonLLeg3/English DragonLLegPalm
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonLLeg1/English DragonLLeg2/English
+      DragonLLeg3/English DragonLLegPalm/LLegPoint
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonLLeg1/English DragonLLeg2/English
+      DragonLLeg3/English DragonLLegPalm/LLegPoint/LLegToe1
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonLLeg1/English DragonLLeg2/English
+      DragonLLeg3/English DragonLLegPalm/LLegPoint/LLegToe1/LLegToe12
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonLLeg1/English DragonLLeg2/English
+      DragonLLeg3/English DragonLLegPalm/LLegPoint/LLegToe2
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonLLeg1/English DragonLLeg2/English
+      DragonLLeg3/English DragonLLegPalm/LLegPoint/LLegToe2/LLegToe21
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonLLeg1/English DragonLLeg2/English
+      DragonLLeg3/English DragonLLegPalm/LLegPoint/LLegToe3
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonLLeg1/English DragonLLeg2/English
+      DragonLLeg3/English DragonLLegPalm/LLegPoint/LLegToe3/LLegToe31
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonRLeg1
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonRLeg1/English DragonRLeg2
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonRLeg1/English DragonRLeg2/English
+      DragonRLeg3
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonRLeg1/English DragonRLeg2/English
+      DragonRLeg3/English DragonRLegPalm
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonRLeg1/English DragonRLeg2/English
+      DragonRLeg3/English DragonRLegPalm/RLegPoint
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonRLeg1/English DragonRLeg2/English
+      DragonRLeg3/English DragonRLegPalm/RLegPoint/RLegToe1
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonRLeg1/English DragonRLeg2/English
+      DragonRLeg3/English DragonRLegPalm/RLegPoint/RLegToe1/RLegToe12
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonRLeg1/English DragonRLeg2/English
+      DragonRLeg3/English DragonRLegPalm/RLegPoint/RLegToe2
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonRLeg1/English DragonRLeg2/English
+      DragonRLeg3/English DragonRLegPalm/RLegPoint/RLegToe2/RLegToe21
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonRLeg1/English DragonRLeg2/English
+      DragonRLeg3/English DragonRLegPalm/RLegPoint/RLegToe3
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonRLeg1/English DragonRLeg2/English
+      DragonRLeg3/English DragonRLegPalm/RLegPoint/RLegToe3/RLegToe31
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2/English
+      DragonSpine3
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2/English
+      DragonSpine3/English DragonRibcage
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2/English
+      DragonSpine3/English DragonRibcage/English DragonLArmCollarbone
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2/English
+      DragonSpine3/English DragonRibcage/English DragonLArmCollarbone/English DragonLArm1
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2/English
+      DragonSpine3/English DragonRibcage/English DragonLArmCollarbone/English DragonLArm1/English
+      DragonLArm2
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2/English
+      DragonSpine3/English DragonRibcage/English DragonLArmCollarbone/English DragonLArm1/English
+      DragonLArm2/English DragonLArm3
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2/English
+      DragonSpine3/English DragonRibcage/English DragonLArmCollarbone/English DragonLArm1/English
+      DragonLArm2/English DragonLArm3/English DragonLArmPalm
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2/English
+      DragonSpine3/English DragonRibcage/English DragonLArmCollarbone/English DragonLArm1/English
+      DragonLArm2/English DragonLArm3/English DragonLArmPalm/LArmPoint
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2/English
+      DragonSpine3/English DragonRibcage/English DragonLArmCollarbone/English DragonLArm1/English
+      DragonLArm2/English DragonLArm3/English DragonLArmPalm/LArmPoint/LHandToe1
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2/English
+      DragonSpine3/English DragonRibcage/English DragonLArmCollarbone/English DragonLArm1/English
+      DragonLArm2/English DragonLArm3/English DragonLArmPalm/LArmPoint/LHandToe1/LHandToe12
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2/English
+      DragonSpine3/English DragonRibcage/English DragonLArmCollarbone/English DragonLArm1/English
+      DragonLArm2/English DragonLArm3/English DragonLArmPalm/LArmPoint/LHandToe2
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2/English
+      DragonSpine3/English DragonRibcage/English DragonLArmCollarbone/English DragonLArm1/English
+      DragonLArm2/English DragonLArm3/English DragonLArmPalm/LArmPoint/LHandToe2/LHandToe21
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2/English
+      DragonSpine3/English DragonRibcage/English DragonLArmCollarbone/English DragonLArm1/English
+      DragonLArm2/English DragonLArm3/English DragonLArmPalm/LArmPoint/LHandToe3
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2/English
+      DragonSpine3/English DragonRibcage/English DragonLArmCollarbone/English DragonLArm1/English
+      DragonLArm2/English DragonLArm3/English DragonLArmPalm/LArmPoint/LHandToe3/LHandToe31
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2/English
+      DragonSpine3/English DragonRibcage/English DragonLWingCollarbone
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2/English
+      DragonSpine3/English DragonRibcage/English DragonLWingCollarbone/English DragonLWing1
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2/English
+      DragonSpine3/English DragonRibcage/English DragonLWingCollarbone/English DragonLWing1/English
+      DragonLWing2
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2/English
+      DragonSpine3/English DragonRibcage/English DragonLWingCollarbone/English DragonLWing1/English
+      DragonLWing2/English DragonLW11
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2/English
+      DragonSpine3/English DragonRibcage/English DragonLWingCollarbone/English DragonLWing1/English
+      DragonLWing2/English DragonLW11/English DragonLW12
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2/English
+      DragonSpine3/English DragonRibcage/English DragonLWingCollarbone/English DragonLWing1/English
+      DragonLWing2/English DragonLW11/English DragonLW12/English DragonLW13
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2/English
+      DragonSpine3/English DragonRibcage/English DragonLWingCollarbone/English DragonLWing1/English
+      DragonLWing2/English DragonLW21
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2/English
+      DragonSpine3/English DragonRibcage/English DragonLWingCollarbone/English DragonLWing1/English
+      DragonLWing2/English DragonLW21/English DragonLW22
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2/English
+      DragonSpine3/English DragonRibcage/English DragonLWingCollarbone/English DragonLWing1/English
+      DragonLWing2/English DragonLW21/English DragonLW22/English DragonLW23
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2/English
+      DragonSpine3/English DragonRibcage/English DragonLWingCollarbone/English DragonLWing1/English
+      DragonLWing2/English DragonLW31
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2/English
+      DragonSpine3/English DragonRibcage/English DragonLWingCollarbone/English DragonLWing1/English
+      DragonLWing2/English DragonLW31/English DragonLW32
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2/English
+      DragonSpine3/English DragonRibcage/English DragonLWingCollarbone/English DragonLWing1/English
+      DragonLWing2/English DragonLW31/English DragonLW32/English DragonLW33
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2/English
+      DragonSpine3/English DragonRibcage/English DragonLWingCollarbone/English DragonLWing1/English
+      DragonLWing2/English DragonLW41
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2/English
+      DragonSpine3/English DragonRibcage/English DragonLWingCollarbone/English DragonLWing1/English
+      DragonLWing2/English DragonLW41/English DragonLW42
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2/English
+      DragonSpine3/English DragonRibcage/English DragonLWingCollarbone/English DragonLWing1/English
+      DragonLWing2/English DragonLW41/English DragonLW42/English DragonLW43
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2/English
+      DragonSpine3/English DragonRibcage/English DragonLWingCollarbone/English DragonLWing1/English
+      DragonLWing2/English DragonWthumbL
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2/English
+      DragonSpine3/English DragonRibcage/English DragonNeck1
+    m_Weight: 1
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2/English
+      DragonSpine3/English DragonRibcage/English DragonNeck1/English DragonNeck2
+    m_Weight: 1
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2/English
+      DragonSpine3/English DragonRibcage/English DragonNeck1/English DragonNeck2/English
+      DragonNeck3
+    m_Weight: 1
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2/English
+      DragonSpine3/English DragonRibcage/English DragonNeck1/English DragonNeck2/English
+      DragonNeck3/English DragonNeck4
+    m_Weight: 1
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2/English
+      DragonSpine3/English DragonRibcage/English DragonNeck1/English DragonNeck2/English
+      DragonNeck3/English DragonNeck4/English DragonNeck5
+    m_Weight: 1
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2/English
+      DragonSpine3/English DragonRibcage/English DragonNeck1/English DragonNeck2/English
+      DragonNeck3/English DragonNeck4/English DragonNeck5/English DragonHead
+    m_Weight: 1
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2/English
+      DragonSpine3/English DragonRibcage/English DragonNeck1/English DragonNeck2/English
+      DragonNeck3/English DragonNeck4/English DragonNeck5/English DragonHead/English
+      DragonJaw
+    m_Weight: 1
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2/English
+      DragonSpine3/English DragonRibcage/English DragonRArmCollarbone
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2/English
+      DragonSpine3/English DragonRibcage/English DragonRArmCollarbone/English DragonRArm1
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2/English
+      DragonSpine3/English DragonRibcage/English DragonRArmCollarbone/English DragonRArm1/English
+      DragonRArm2
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2/English
+      DragonSpine3/English DragonRibcage/English DragonRArmCollarbone/English DragonRArm1/English
+      DragonRArm2/English DragonRArm3
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2/English
+      DragonSpine3/English DragonRibcage/English DragonRArmCollarbone/English DragonRArm1/English
+      DragonRArm2/English DragonRArm3/English DragonRArmPalm
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2/English
+      DragonSpine3/English DragonRibcage/English DragonRArmCollarbone/English DragonRArm1/English
+      DragonRArm2/English DragonRArm3/English DragonRArmPalm/RArmPoint
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2/English
+      DragonSpine3/English DragonRibcage/English DragonRArmCollarbone/English DragonRArm1/English
+      DragonRArm2/English DragonRArm3/English DragonRArmPalm/RArmPoint/RHandToe1
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2/English
+      DragonSpine3/English DragonRibcage/English DragonRArmCollarbone/English DragonRArm1/English
+      DragonRArm2/English DragonRArm3/English DragonRArmPalm/RArmPoint/RHandToe1/RHandToe12
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2/English
+      DragonSpine3/English DragonRibcage/English DragonRArmCollarbone/English DragonRArm1/English
+      DragonRArm2/English DragonRArm3/English DragonRArmPalm/RArmPoint/RHandToe2
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2/English
+      DragonSpine3/English DragonRibcage/English DragonRArmCollarbone/English DragonRArm1/English
+      DragonRArm2/English DragonRArm3/English DragonRArmPalm/RArmPoint/RHandToe2/RHandToe21
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2/English
+      DragonSpine3/English DragonRibcage/English DragonRArmCollarbone/English DragonRArm1/English
+      DragonRArm2/English DragonRArm3/English DragonRArmPalm/RArmPoint/RHandToe3
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2/English
+      DragonSpine3/English DragonRibcage/English DragonRArmCollarbone/English DragonRArm1/English
+      DragonRArm2/English DragonRArm3/English DragonRArmPalm/RArmPoint/RHandToe3/RHandToe31
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2/English
+      DragonSpine3/English DragonRibcage/English DragonRWingCollarbone
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2/English
+      DragonSpine3/English DragonRibcage/English DragonRWingCollarbone/English DragonRWing1
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2/English
+      DragonSpine3/English DragonRibcage/English DragonRWingCollarbone/English DragonRWing1/English
+      DragonRWing2
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2/English
+      DragonSpine3/English DragonRibcage/English DragonRWingCollarbone/English DragonRWing1/English
+      DragonRWing2/English DragonRW11
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2/English
+      DragonSpine3/English DragonRibcage/English DragonRWingCollarbone/English DragonRWing1/English
+      DragonRWing2/English DragonRW11/English DragonRW12
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2/English
+      DragonSpine3/English DragonRibcage/English DragonRWingCollarbone/English DragonRWing1/English
+      DragonRWing2/English DragonRW11/English DragonRW12/English DragonRW13
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2/English
+      DragonSpine3/English DragonRibcage/English DragonRWingCollarbone/English DragonRWing1/English
+      DragonRWing2/English DragonRW21
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2/English
+      DragonSpine3/English DragonRibcage/English DragonRWingCollarbone/English DragonRWing1/English
+      DragonRWing2/English DragonRW21/English DragonRW22
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2/English
+      DragonSpine3/English DragonRibcage/English DragonRWingCollarbone/English DragonRWing1/English
+      DragonRWing2/English DragonRW21/English DragonRW22/English DragonRW23
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2/English
+      DragonSpine3/English DragonRibcage/English DragonRWingCollarbone/English DragonRWing1/English
+      DragonRWing2/English DragonRW31
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2/English
+      DragonSpine3/English DragonRibcage/English DragonRWingCollarbone/English DragonRWing1/English
+      DragonRWing2/English DragonRW31/English DragonRW32
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2/English
+      DragonSpine3/English DragonRibcage/English DragonRWingCollarbone/English DragonRWing1/English
+      DragonRWing2/English DragonRW31/English DragonRW32/English DragonRW33
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2/English
+      DragonSpine3/English DragonRibcage/English DragonRWingCollarbone/English DragonRWing1/English
+      DragonRWing2/English DragonRW41
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2/English
+      DragonSpine3/English DragonRibcage/English DragonRWingCollarbone/English DragonRWing1/English
+      DragonRWing2/English DragonRW41/English DragonRW42
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2/English
+      DragonSpine3/English DragonRibcage/English DragonRWingCollarbone/English DragonRWing1/English
+      DragonRWing2/English DragonRW41/English DragonRW42/English DragonRW43
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonSpine1/English DragonSpine2/English
+      DragonSpine3/English DragonRibcage/English DragonRWingCollarbone/English DragonRWing1/English
+      DragonRWing2/English DragonWthumbR
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonTail1
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonTail1/English DragonTail2
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonTail1/English DragonTail2/English
+      DragonTail3
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonTail1/English DragonTail2/English
+      DragonTail3/English DragonTail4
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonTail1/English DragonTail2/English
+      DragonTail3/English DragonTail4/English DragonTail5
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonTail1/English DragonTail2/English
+      DragonTail3/English DragonTail4/English DragonTail5/English DragonTail6
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonTail1/English DragonTail2/English
+      DragonTail3/English DragonTail4/English DragonTail5/English DragonTail6/English
+      DragonTail7
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonTail1/English DragonTail2/English
+      DragonTail3/English DragonTail4/English DragonTail5/English DragonTail6/English
+      DragonTail7/English DragonTail8
+    m_Weight: 0
+  - m_Path: DragonRoot/English DragonPelvis/English DragonTail1/English DragonTail2/English
+      DragonTail3/English DragonTail4/English DragonTail5/English DragonTail6/English
+      DragonTail7/English DragonTail8/English DragonTail9
+    m_Weight: 0
+  - m_Path: Fins
+    m_Weight: 0
+  - m_Path: Fins_Saddled
+    m_Weight: 0
+  - m_Path: Head_A001
+    m_Weight: 1
+  - m_Path: Head_B
+    m_Weight: 1
+  - m_Path: Head_C
+    m_Weight: 1
+  - m_Path: Reins
+    m_Weight: 1
+  - m_Path: Reins_Head_B001
+    m_Weight: 1
+  - m_Path: Saddle
+    m_Weight: 0
+  - m_Path: Saddle_B
+    m_Weight: 0
+  - m_Path: Spikes001
+    m_Weight: 0
+  - m_Path: Spikes_Saddled
+    m_Weight: 0
+  - m_Path: Tail_A001
+    m_Weight: 0
+  - m_Path: Tail_B
+    m_Weight: 0
