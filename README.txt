@@ -1,4 +1,6 @@
-ALL RIGHTS RESERVED
+#HorrorZ
+
+ALL RIGHTS RESERVED.
 
 -Knight/menu/Editor programming - Pearson Lawrence
 
