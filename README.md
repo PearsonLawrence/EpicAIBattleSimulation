@@ -2,6 +2,12 @@
 
 ALL RIGHTS RESERVED.
 
+- Try to escape an experimental laboratory while evading and killing mutants!
+
+- Made in two weeks by a team of two
+
+- https://www.youtube.com/watch?v=hIlTt-IJIzk (Gameplay)
+
 -Knight/menu/Editor programming - Pearson Lawrence
 
 -Dragon Programming - Chelsey Lotts
