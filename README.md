@@ -4,7 +4,7 @@
 
 - Supports map selection, up to 100 units, magic casting system
 
--
+- https://www.youtube.com/watch?v=uB5h5NAkqdU&t=11s (Gameplay)
 
 -Knight/menu/Editor programming - Pearson Lawrence
 
