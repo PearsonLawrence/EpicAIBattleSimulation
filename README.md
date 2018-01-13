@@ -1,12 +1,10 @@
-# HorrorZ
+# EpicAIBattleSimulation
 
-ALL RIGHTS RESERVED.
+- Create your own AI Battle scenario's 
 
-- Try to escape an experimental laboratory while evading and killing mutants!
+- Supports map selection, up to 100 units, magic casting system
 
-- Made in two weeks by a team of two
-
-- https://www.youtube.com/watch?v=hIlTt-IJIzk (Gameplay)
+-
 
 -Knight/menu/Editor programming - Pearson Lawrence
 
