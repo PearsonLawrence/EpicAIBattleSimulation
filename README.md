@@ -2,7 +2,7 @@
 
 - Create your own AI Battle scenario's 
 
-- Supports map selection, up to 100 units, magic casting system
+- Supports map selection, up to 100 units, and a magic casting system.
 
 - https://www.youtube.com/watch?v=uB5h5NAkqdU&t=11s (Gameplay)
 
